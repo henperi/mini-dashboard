@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="4px" viewBox="0 0 16 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gmail" transform="translate(-972.000000, -497.000000)" fill="#9DA6B7" fill-rule="nonzero">
+            <g id="files" transform="translate(207.000000, 375.000000)">
+                <path d="M767,122 C765.9,122 765,122.9 765,124 C765,125.1 765.9,126 767,126 C768.1,126 769,125.1 769,124 C769,122.9 768.1,122 767,122 Z M779,122 C777.9,122 777,122.9 777,124 C777,125.1 777.9,126 779,126 C780.1,126 781,125.1 781,124 C781,122.9 780.1,122 779,122 Z M773,122 C771.9,122 771,122.9 771,124 C771,125.1 771.9,126 773,126 C774.1,126 775,125.1 775,124 C775,122.9 774.1,122 773,122 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

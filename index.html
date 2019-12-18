@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini Dashboard App</title>
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container row">
+      <div
+        class="sidebar col col-1 col-sm-3 col-md-2 col__crossAxis--center col__mainAxis--spaceBetween"
+      >
+        <div class="sidebar__top">
+          <img
+            class="margin__bottom--20"
+            src="assets/images/profileImage.png"
+            alt=""
+          />
+
+          <div class="sidebar__icons col">
+              <div
+                class="icon__item icon__item--selected col col__crossAxis--center col__mainAxis--center"
+              >
+                <div class="item-hover"></div>
+                <!-- <img src="assets/images/dashboard.svg" alt="" /> -->
+                <object class="svg" data="/assets/images/dashboard.svg" type="image/svg+xml"></object>
+              </div>
+              <div
+                class="icon__item col col__crossAxis--center col__mainAxis--center"
+              >
+                <div class="item-hover"></div>
+                <object class="svg" data="/assets/images/inbox.svg" type="image/svg+xml"></object>
+                <!-- <img src="assets/images/inbox.svg" alt="" /> -->
+              </div>
+            <div
+              class="icon__item col col__crossAxis--center col__mainAxis--center"
+            >
+              <div class="item-hover"></div>
+              <object class="svg" data="/assets/images/star.svg" type="image/svg+xml"></object>
+              <!-- <img src="assets/images/star.svg" alt="" /> -->
+            </div>
+            <div
+              class="icon__item col col__crossAxis--center col__mainAxis--center"
+            >
+              <div class="item-hover"></div>
+              <object class="svg" data="/assets/images/cloud.svg" type="image/svg+xml"></object>
+              <!-- <img src="assets/images/cloud.svg" alt="" /> -->
+            </div>
+            <div
+              class="icon__item col col__crossAxis--center col__mainAxis--center"
+            >
+              <div class="item-hover"></div>
+              <object class="svg" data="/assets/images/bin.svg" type="image/svg+xml"></object>
+              <!-- <img src="assets/images/bin.svg" alt="" /> -->
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <div
+            class="icon__item col col__crossAxis--center col__mainAxis--center"
+          >
+            <div class="item-hover-default"></div>
+            <img src="assets/images/plus.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-app row col-11 col-sm-12">
+        <div class="dashboard col-9 col-sm-12 col-md-12">
+          <div class="row row__mainAxis--spaceBetween">
+            <span class="title">My dashboard</span>
+            <div class="row row__crossAxis--center">
+              <img class="top-icon" src="assets/images/search.svg" alt="" />
+              <img class="top-icon" src="assets/images/bell.svg" alt="" />
+            </div>
+          </div>
+          <div class="col margin__vertical--20">
+            <span class="subtitle text-light margin__vertical--20"
+              >Last modified</span
+            >
+
+            <div class="row row__mainAxis--spaceBetween">
+              <div class="card card--modified col-4 col-sm-12 col-md-6">
+                <div class="row margin__bottom--40">
+                  <img
+                    class="margin__right--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <div class="subtitle">Design</div>
+                </div>
+                <div class="row row__mainAxis--spaceBetween">
+                  <span class="text text-light">10/9/19</span>
+                  <div class="row">
+                    <div class="stack">
+                      <img
+                        class="stack__image bg--primary"
+                        src=""
+                        alt=""
+                      />
+                      <img
+                        class="stack__image"
+                        src="assets/images/picture-1.png"
+                        alt=""
+                      />
+                      <img
+                        class="stack__image bg--accent"
+                        src=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--modified col-4 col-sm-12 col-md-6">
+                <div class="row margin__bottom--40">
+                  <img
+                    class="margin__right--20"
+                    src="assets/images/file.svg"
+                    alt=""
+                  />
+                  <div class="subtitle">Software.doc</div>
+                </div>
+                <div class="row row__mainAxis--spaceBetween">
+                  <span class="text text-light">10/9/19</span>
+                  <div class="row">
+                    <div class="stack">
+                      <img
+                        class="stack__image"
+                        src="assets/images/picture-1.png"
+                        alt=""
+                      />
+                      <img
+                        class="stack__image"
+                        src=""
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--modified col-4 col-sm-12 col-md-6">
+                <div class="row margin__bottom--40">
+                  <img
+                    class="margin__right--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <div class="subtitle">Images</div>
+                </div>
+                <div class="row row__mainAxis--spaceBetween">
+                  <span class="text text-light">10/9/19</span>
+                  <div class="row">
+                    <div class="stack">
+                      <img
+                        class="stack__image"
+                        src="assets/images/picture-1.png"
+                        alt=""
+                      />
+                      <img
+                        class="stack__image"
+                        src="assets/images/picture-1.pngs"
+                        alt=""
+                      />
+                      <img
+                        class="stack__image"
+                        src="assets/images/picture-1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col margin__vertical--20">
+            <div class="row row__mainAxis--spaceBetween row__crossAxis--center">
+              <span class="subtitle text-light margin__vertical--20"
+                >Files</span
+              >
+              <div class="">
+                <button class="button bg--accent">Delete</button>
+                <button class="button">Share</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row hidden-sm-down">
+                <div class="col-4">
+                  <input type="checkbox" name="" id="" />
+                  <span class="text text-light margin__horizontal--20"
+                    >Name</span
+                  >
+                </div>
+                <div class="col-4">
+                  <span class="text text-light">Modified</span>
+                </div>
+                <div class="col-3">
+                  <span class="text text-light">Members</span>
+                </div>
+                <div class="col-1"></div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image bg--primary"
+                      src=""
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image bg--accent"
+                      src=""
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="row table--item card card--selected row__crossAxis--center"
+              >
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" checked />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/file.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">Meeting Notes</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image bg--simple-blue"
+                      src=""
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img class="stack__image" src="" alt="" />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack"></div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="row table--item card card--selected row__crossAxis--center"
+              >
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" checked />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/picture.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">Analysis.png</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img class="stack__image" src="" alt="" />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+              <div class="row table--item card row__crossAxis--center">
+                <div class="col-4 col-sm-11 row row__crossAxis--center">
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    class="margin__horizontal--20"
+                    src="assets/images/folder.svg"
+                    alt=""
+                  />
+                  <span class="text text-light">User Research</span>
+                </div>
+                <div class="col-1 col-sm-1 hidden-lg">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+                <div class="col-4 col-sm-6">
+                  <span class="text text-light">3/9/19, 3:40PM</span>
+                </div>
+                <div class="col-3 col-sm-6">
+                  <div class="stack">
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="stack__image"
+                      src="assets/images/picture-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-1 hidden-sm-down">
+                  <img src="assets/images/more-h.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-12 col-md-12 card card--modified col">
+          <div class="calendar col">
+            <span class="subtitle">My Calendar</span>
+            <span class="text text-light">September</span>
+          </div>
+
+          <span class="subtitle">Today, 13 September</span>
+          <div class="row row__mainAxis--spaceBetween margin__vertical--20">
+            <div class="card mv--10 col-12 col-md-6 col-sm-12 bg--grey margin__vertical--20 col padding__all--10">
+              <small class="text-light">12 am - 13 am</small>
+              <span class="text">Design Thinking Meeting</span>
+              <div class="stack margin__top--20">
+                <img class="stack__image bg--simple-blue" src="" alt="">
+                <img class="stack__image" src="/assets/images/picture-1.png" alt="">
+                <img class="stack__image" src="" alt="">
+              </div>
+            </div>
+            <div class="row mv--10 margin__vertical--20 col-12 col-md-6 col-sm-12 card bg--grey margin__vertical--20 col padding__all--10">
+              <div class="col-12 col">
+                <img width="100%" height="100%" src="/assets/images/lady.png" alt="">
+                <small class="text-light">15 am - 17 am</small>
+                <span class="text">Ux Design Meeting</span>
+                <div class="stack margin__top--20">
+                  <img class="stack__image bg--accent" src="" alt="">
+                  <img class="stack__image" src="/assets/images/picture-1.png" alt="">
+                  <img class="stack__image bg--primary" src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+.margin__vertical--20 {
+  margin: 20px 0;
+}
+
+.margin__horizontal--20 {
+  margin: 0 20px;
+}
+
+.margin__top--20 {
+  margin-top: 20px;
+}
+
+.margin__top--40 {
+  margin-top: 40px;
+}
+
+.margin__top--60 {
+  margin-top: 60px;
+}
+
+.margin__top--80 {
+  margin-top: 80px;
+}
+
+.margin__top--100 {
+  margin-top: 100px;
+}
+
+.margin__bottom--20 {
+  margin-bottom: 20px;
+}
+
+.margin__bottom--40 {
+  margin-bottom: 40px;
+}
+
+.margin__bottom--60 {
+  margin-bottom: 60px;
+}
+
+.margin__bottom--80 {
+  margin-bottom: 80px;
+}
+
+.margin__bottom--100 {
+  margin-bottom: 100px;
+}
+
+.margin__left--20 {
+  margin-left: 20px;
+}
+
+.margin__left--40 {
+  margin-left: 40px;
+}
+
+.margin__left--60 {
+  margin-left: 60px;
+}
+
+.margin__left--80 {
+  margin-left: 80px;
+}
+
+.margin__left--100 {
+  margin-left: 100px;
+}
+
+.margin__right--20 {
+  margin-right: 20px;
+}
+
+.margin__right--40 {
+  margin-right: 40px;
+}
+
+.margin__right--60 {
+  margin-right: 60px;
+}
+
+.margin__right--80 {
+  margin-right: 80px;
+}
+
+.margin__right--100 {
+  margin-right: 100px;
+}
+/*# sourceMappingURL=margins.css.map */

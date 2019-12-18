@@ -1,0 +1,22 @@
+/*
+===================================
+Typography
+===================================
+*/
+* {
+  color: #505050;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.text-light {
+  font-weight: 100;
+  color: #667080;
+}
+/*# sourceMappingURL=typoghraphy.css.map */

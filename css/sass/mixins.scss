@@ -1,0 +1,102 @@
+/*
+======================
+Mixins
+The generate columns mixin helps generate responsive cols depending on the deviceSize passed
+@param $deviceSize => col | col-xs | col-sm | col-md | col-lg
+======================
+*/
+@mixin generateColumns($deviceSize) {
+  &-12 {
+    margin: $appMargin;
+    width: calc((12 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-11 {
+    margin: $appMargin;
+    width: calc((11 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-10 {
+    margin: $appMargin;
+    width: calc((10 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-9 {
+    margin: $appMargin;
+    width: calc((9 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-8 {
+    margin: $appMargin;
+    width: calc((8 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-7 {
+    margin: $appMargin;
+    width: calc((7 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-6 {
+    margin: $appMargin;
+    width: calc((6 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-5 {
+    margin: $appMargin;
+    width: calc((5 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-4 {
+    margin: $appMargin;
+    width: calc((4 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-3 {
+    margin: $appMargin;
+    width: calc((3 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-2 {
+    margin: $appMargin;
+    width: calc((2 / 12 * 100%) - #{$appMargin * 2});
+  }
+  &-1 {
+    margin: $appMargin;
+    width: calc((1 / 12 * 100%) - #{$appMargin * 2});
+  }
+}
+
+/*
+======================
+Mixins
+The alignment mixin helps generate alignment classes for either rows or columns
+@param $direction => col | row
+======================
+*/
+@mixin alignment($direction) {
+  &__mainAxis {
+    &--spaceBetween {
+      justify-content: space-between;
+    }
+    &--spaceAround {
+      justify-content: space-around;
+    }
+    &--spaceEvenly {
+      justify-content: space-evenly;
+    }
+    &--start {
+      justify-content: start;
+    }
+    &--end {
+      justify-content: flex-end;
+    }
+    &--center {
+      justify-content: center;
+    }
+  }
+
+  &__crossAxis {
+    &--spaceBetween {
+      align-items: stretch;
+    }
+    &--center {
+      align-items: center;
+    }
+    &--start {
+      align-items: flex-start;
+    }
+    &--end {
+      align-items: flex-end;
+    }
+  }
+}

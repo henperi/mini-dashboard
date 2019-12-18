@@ -1,0 +1,122 @@
+@import "sass/variables.scss", "sass/margins.scss", "sass/mixins.scss";
+
+:root {
+  --appMargin: #{$appMargin};
+}
+
+$xs: 320px;
+$sm: 650px;
+$md: 1024px;
+$lg: 1440px;
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+
+  @include alignment("");
+}
+
+.col {
+  display: flex;
+  flex-flow: column;
+
+  @include alignment("");
+  @include generateColumns("");
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+=====================
+Normal Desktop Devices and Below
+=====================
+*/
+@media screen and (max-width: $lg) {
+  .col-lg {
+    @include generateColumns(".col-lg");
+  }
+  .hidden-lg-down {
+    display: none;
+  }
+}
+@media only screen and (min-width: $md) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+/*
+=====================
+Tablet Devices and Below
+=====================
+*/
+@media screen and (max-width: $md) {
+  .col-md {
+    @include generateColumns("");
+  }
+  .hidden-md-down {
+    display: none;
+  }
+}
+@media only screen and (max-width: $md) and (min-width: $sm) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+/*
+=====================
+Mobile Devices and Below
+=====================
+*/
+@media screen and (max-width: $sm) {
+  .col-sm {
+    @include generateColumns("");
+  }
+  .hidden-sm-down {
+    display: none;
+  }
+}
+@media only screen and (max-width: $sm) and (min-width: $xs) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+/*
+=====================
+Extra Small Mobile Devices and Below
+=====================
+*/
+@media screen and (max-width: $xs) {
+  .col-xs {
+    @include generateColumns("");
+  }
+  .hidden-xs-down {
+    display: none;
+  }
+}
+@media only screen and (max-width: $xs) and (min-width: 0px) {
+  .hidden-xs {
+    display: none;
+  }
+}

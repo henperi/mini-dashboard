@@ -1,0 +1,293 @@
+/*
+===================================
+Typography
+===================================
+*/
+* {
+  color: #505050;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.text-light {
+  font-weight: 100;
+  color: #667080;
+}
+
+body {
+  background: #fff;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fbfd;
+}
+
+.container {
+  margin: 20px;
+  height: 100%;
+}
+
+.container .top-icon {
+  padding: 0 0 0 20px;
+}
+
+.container .sidebar {
+  background-color: #373759;
+  color: #fff;
+  border-radius: 34px;
+  -webkit-box-shadow: 0 2px 30px 0 #9aa6c9;
+          box-shadow: 0 2px 30px 0 #9aa6c9;
+  padding: 30px 0;
+  height: calc(100vh - calc(40px + 1.1%));
+  position: fixed;
+  z-index: 10;
+}
+
+.container .icon__item {
+  position: relative;
+  z-index: 1;
+  height: 80px;
+  cursor: pointer;
+}
+
+.container .icon__item .svg {
+  opacity: 0.3;
+}
+
+.container .icon__item:hover .item-hover, .container .icon__item:active .item-hover, .container .icon__item--selected .item-hover {
+  position: absolute;
+  background-color: #6788ff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: -25px;
+  width: 80px;
+  height: 100%;
+  z-index: -1;
+}
+
+.container .icon__item:hover .svg, .container .icon__item:active .svg, .container .icon__item--selected .svg {
+  opacity: 1;
+}
+
+.container .icon__item .item-hover-default {
+  position: absolute;
+  background-color: #6788ff;
+  border-radius: 20px;
+  width: 65px;
+  height: 65px;
+  z-index: -1;
+}
+
+.main-app {
+  margin-left: auto;
+}
+
+.main-app .dashboard {
+  padding: 20px;
+}
+
+.card {
+  padding: 5px;
+  min-height: 50px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(154, 166, 201, 0.2);
+          box-shadow: 0px 2px 20px 0px rgba(154, 166, 201, 0.2);
+}
+
+.card--modified {
+  padding: 25px;
+}
+
+.card--selected {
+  background: #eef2fa;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(154, 166, 201, 0.5);
+          box-shadow: 0px 2px 20px 0px rgba(154, 166, 201, 0.5);
+}
+
+.card--shapeless {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.card .mv__all--20 {
+  margin: 20px;
+}
+
+.card .mv--10 {
+  margin: 10px 0;
+}
+
+.calendar {
+  height: 300px;
+}
+
+.stack {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stack__image {
+  margin-left: -10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: salmon;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 10px;
+  position: relative;
+}
+
+.stack__image:first-child {
+  margin-left: 0;
+}
+
+/*
+=============================
+Buttons, Anchor
+=============================
+*/
+a,
+button {
+  cursor: pointer;
+}
+
+.button {
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 28px;
+  border-radius: 5px;
+  background-color: #6788ff;
+  -webkit-box-shadow: 4px 16px 44px -6px rgba(154, 166, 201, 0.29);
+          box-shadow: 4px 16px 44px -6px rgba(154, 166, 201, 0.29);
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.button:hover {
+  -webkit-box-shadow: 4px 16px 44px -6px rgba(83, 83, 83, 0.5);
+          box-shadow: 4px 16px 44px -6px rgba(83, 83, 83, 0.5);
+}
+
+.bg--accent {
+  background-color: #ff9391;
+}
+
+.bg--primary {
+  background-color: #6788ff;
+}
+
+.bg--grey {
+  background-color: #eef2fa;
+}
+
+.bg--simple-blue {
+  background-color: #45c7d8;
+}
+
+/**
+===============================
+Table
+===============================
+*/
+.table--item {
+  margin: 5px 0;
+}
+
+/**
+===============================
+Padding
+===============================
+*/
+.padding__all--5 {
+  padding: 5px;
+}
+
+.padding__all--10 {
+  padding: 10px;
+}
+
+.padding__all--20 {
+  padding: 20px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .icon__item:hover .item-hover, .icon__item:active .item-hover, .icon__item--selected .item-hover {
+    left: -10px !important;
+    width: 70px !important;
+  }
+}
+
+@media screen and (min-width: 650.1px) and (max-width: 1024px) {
+  .main-app {
+    margin: auto auto;
+  }
+  .sidebar {
+    left: 0;
+    margin-left: -14%;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+  }
+  .sidebar:hover {
+    margin-left: -25px;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-app .dashboard {
+    padding: 10px;
+  }
+  .main-app {
+    margin-left: auto;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .sidebar {
+    left: 0;
+    margin-left: -21%;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+  }
+  .sidebar:hover {
+    margin-left: -10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-app .dashboard {
+    padding: 20px 0;
+  }
+  .sidebar {
+    left: 0;
+    margin-left: -21%;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+  }
+  .sidebar:hover {
+    margin-left: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

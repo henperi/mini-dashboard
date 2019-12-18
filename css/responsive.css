@@ -1,0 +1,592 @@
+/*
+======================
+Variables
+======================
+*/
+.margin__vertical--20 {
+  margin: 20px 0;
+}
+
+.margin__horizontal--20 {
+  margin: 0 20px;
+}
+
+.margin__top--20 {
+  margin-top: 20px;
+}
+
+.margin__top--40 {
+  margin-top: 40px;
+}
+
+.margin__top--60 {
+  margin-top: 60px;
+}
+
+.margin__top--80 {
+  margin-top: 80px;
+}
+
+.margin__top--100 {
+  margin-top: 100px;
+}
+
+.margin__bottom--20 {
+  margin-bottom: 20px;
+}
+
+.margin__bottom--40 {
+  margin-bottom: 40px;
+}
+
+.margin__bottom--60 {
+  margin-bottom: 60px;
+}
+
+.margin__bottom--80 {
+  margin-bottom: 80px;
+}
+
+.margin__bottom--100 {
+  margin-bottom: 100px;
+}
+
+.margin__left--20 {
+  margin-left: 20px;
+}
+
+.margin__left--40 {
+  margin-left: 40px;
+}
+
+.margin__left--60 {
+  margin-left: 60px;
+}
+
+.margin__left--80 {
+  margin-left: 80px;
+}
+
+.margin__left--100 {
+  margin-left: 100px;
+}
+
+.margin__right--20 {
+  margin-right: 20px;
+}
+
+.margin__right--40 {
+  margin-right: 40px;
+}
+
+.margin__right--60 {
+  margin-right: 60px;
+}
+
+.margin__right--80 {
+  margin-right: 80px;
+}
+
+.margin__right--100 {
+  margin-right: 100px;
+}
+
+/*
+======================
+Mixins
+The generate columns mixin helps generate responsive cols depending on the deviceSize passed
+@param $deviceSize => col | col-xs | col-sm | col-md | col-lg
+======================
+*/
+/*
+======================
+Mixins
+The alignment mixin helps generate alignment classes for either rows or columns
+@param $direction => col | row
+======================
+*/
+:root {
+  --appMargin: 0.55%;
+}
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.row__mainAxis--spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row__mainAxis--spaceAround {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row__mainAxis--spaceEvenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.row__mainAxis--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.row__mainAxis--end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.row__mainAxis--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row__crossAxis--spaceBetween {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.row__crossAxis--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row__crossAxis--start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.row__crossAxis--end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.col__mainAxis--spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col__mainAxis--spaceAround {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col__mainAxis--spaceEvenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.col__mainAxis--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.col__mainAxis--end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.col__mainAxis--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col__crossAxis--spaceBetween {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.col__crossAxis--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col__crossAxis--start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.col__crossAxis--end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.col-12 {
+  margin: 0.55%;
+  width: calc((12 / 12 * 100%) - 1.1%);
+}
+
+.col-11 {
+  margin: 0.55%;
+  width: calc((11 / 12 * 100%) - 1.1%);
+}
+
+.col-10 {
+  margin: 0.55%;
+  width: calc((10 / 12 * 100%) - 1.1%);
+}
+
+.col-9 {
+  margin: 0.55%;
+  width: calc((9 / 12 * 100%) - 1.1%);
+}
+
+.col-8 {
+  margin: 0.55%;
+  width: calc((8 / 12 * 100%) - 1.1%);
+}
+
+.col-7 {
+  margin: 0.55%;
+  width: calc((7 / 12 * 100%) - 1.1%);
+}
+
+.col-6 {
+  margin: 0.55%;
+  width: calc((6 / 12 * 100%) - 1.1%);
+}
+
+.col-5 {
+  margin: 0.55%;
+  width: calc((5 / 12 * 100%) - 1.1%);
+}
+
+.col-4 {
+  margin: 0.55%;
+  width: calc((4 / 12 * 100%) - 1.1%);
+}
+
+.col-3 {
+  margin: 0.55%;
+  width: calc((3 / 12 * 100%) - 1.1%);
+}
+
+.col-2 {
+  margin: 0.55%;
+  width: calc((2 / 12 * 100%) - 1.1%);
+}
+
+.col-1 {
+  margin: 0.55%;
+  width: calc((1 / 12 * 100%) - 1.1%);
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+=====================
+Normal Desktop Devices and Below
+=====================
+*/
+@media screen and (max-width: 1440px) {
+  .col-lg-12 {
+    margin: 0.55%;
+    width: calc((12 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-11 {
+    margin: 0.55%;
+    width: calc((11 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-10 {
+    margin: 0.55%;
+    width: calc((10 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-9 {
+    margin: 0.55%;
+    width: calc((9 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-8 {
+    margin: 0.55%;
+    width: calc((8 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-7 {
+    margin: 0.55%;
+    width: calc((7 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-6 {
+    margin: 0.55%;
+    width: calc((6 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-5 {
+    margin: 0.55%;
+    width: calc((5 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-4 {
+    margin: 0.55%;
+    width: calc((4 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-3 {
+    margin: 0.55%;
+    width: calc((3 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-2 {
+    margin: 0.55%;
+    width: calc((2 / 12 * 100%) - 1.1%);
+  }
+  .col-lg-1 {
+    margin: 0.55%;
+    width: calc((1 / 12 * 100%) - 1.1%);
+  }
+  .hidden-lg-down {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+/*
+=====================
+Tablet Devices and Below
+=====================
+*/
+@media screen and (max-width: 1024px) {
+  .col-md-12 {
+    margin: 0.55%;
+    width: calc((12 / 12 * 100%) - 1.1%);
+  }
+  .col-md-11 {
+    margin: 0.55%;
+    width: calc((11 / 12 * 100%) - 1.1%);
+  }
+  .col-md-10 {
+    margin: 0.55%;
+    width: calc((10 / 12 * 100%) - 1.1%);
+  }
+  .col-md-9 {
+    margin: 0.55%;
+    width: calc((9 / 12 * 100%) - 1.1%);
+  }
+  .col-md-8 {
+    margin: 0.55%;
+    width: calc((8 / 12 * 100%) - 1.1%);
+  }
+  .col-md-7 {
+    margin: 0.55%;
+    width: calc((7 / 12 * 100%) - 1.1%);
+  }
+  .col-md-6 {
+    margin: 0.55%;
+    width: calc((6 / 12 * 100%) - 1.1%);
+  }
+  .col-md-5 {
+    margin: 0.55%;
+    width: calc((5 / 12 * 100%) - 1.1%);
+  }
+  .col-md-4 {
+    margin: 0.55%;
+    width: calc((4 / 12 * 100%) - 1.1%);
+  }
+  .col-md-3 {
+    margin: 0.55%;
+    width: calc((3 / 12 * 100%) - 1.1%);
+  }
+  .col-md-2 {
+    margin: 0.55%;
+    width: calc((2 / 12 * 100%) - 1.1%);
+  }
+  .col-md-1 {
+    margin: 0.55%;
+    width: calc((1 / 12 * 100%) - 1.1%);
+  }
+  .hidden-md-down {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 650px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+/*
+=====================
+Mobile Devices and Below
+=====================
+*/
+@media screen and (max-width: 650px) {
+  .col-sm-12 {
+    margin: 0.55%;
+    width: calc((12 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-11 {
+    margin: 0.55%;
+    width: calc((11 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-10 {
+    margin: 0.55%;
+    width: calc((10 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-9 {
+    margin: 0.55%;
+    width: calc((9 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-8 {
+    margin: 0.55%;
+    width: calc((8 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-7 {
+    margin: 0.55%;
+    width: calc((7 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-6 {
+    margin: 0.55%;
+    width: calc((6 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-5 {
+    margin: 0.55%;
+    width: calc((5 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-4 {
+    margin: 0.55%;
+    width: calc((4 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-3 {
+    margin: 0.55%;
+    width: calc((3 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-2 {
+    margin: 0.55%;
+    width: calc((2 / 12 * 100%) - 1.1%);
+  }
+  .col-sm-1 {
+    margin: 0.55%;
+    width: calc((1 / 12 * 100%) - 1.1%);
+  }
+  .hidden-sm-down {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 320px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+/*
+=====================
+Extra Small Mobile Devices and Below
+=====================
+*/
+@media screen and (max-width: 320px) {
+  .col-xs-12 {
+    margin: 0.55%;
+    width: calc((12 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-11 {
+    margin: 0.55%;
+    width: calc((11 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-10 {
+    margin: 0.55%;
+    width: calc((10 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-9 {
+    margin: 0.55%;
+    width: calc((9 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-8 {
+    margin: 0.55%;
+    width: calc((8 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-7 {
+    margin: 0.55%;
+    width: calc((7 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-6 {
+    margin: 0.55%;
+    width: calc((6 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-5 {
+    margin: 0.55%;
+    width: calc((5 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-4 {
+    margin: 0.55%;
+    width: calc((4 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-3 {
+    margin: 0.55%;
+    width: calc((3 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-2 {
+    margin: 0.55%;
+    width: calc((2 / 12 * 100%) - 1.1%);
+  }
+  .col-xs-1 {
+    margin: 0.55%;
+    width: calc((1 / 12 * 100%) - 1.1%);
+  }
+  .hidden-xs-down {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 0px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

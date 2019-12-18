@@ -1,0 +1,15 @@
+/*
+======================
+Mixins
+The generate columns mixin helps generate responsive cols depending on the deviceSize passed
+@param $deviceSize => col | col-xs | col-sm | col-md | col-lg
+======================
+*/
+/*
+======================
+Mixins
+The alignment mixin helps generate alignment classes for either rows or columns
+@param $direction => col | row
+======================
+*/
+/*# sourceMappingURL=mixins.css.map */

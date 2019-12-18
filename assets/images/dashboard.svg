@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="svg.css"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sidebar" transform="translate(-45.000000, -164.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-5">
+                <g id="layout" transform="translate(40.000000, 159.000000)">
+                    <rect id="Rectangle-path" fill="#000000" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M35,13.3333333 L35,10 C35,7.23857625 32.7614237,5 30,5 L10,5 C7.23857625,5 5,7.23857625 5,10 L5,13.3333333 L35,13.3333333 Z" id="Shape" fill-opacity="0.9" fill="#FFFFFF"></path>
+                    <path d="M5,16.6666667 L5,30 C5,32.7614237 7.23857625,35 10,35 L18.3333333,35 L18.3333333,16.6666667 L5,16.6666667 Z" id="Shape" fill-opacity="0.9" fill="#FFFFFF"></path>
+                    <path d="M21.6666667,16.6666667 L21.6666667,35 L30,35 C32.7614237,35 35,32.7614237 35,30 L35,16.6666667 L21.6666667,16.6666667 Z" id="Shape" fill-opacity="0.9" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
