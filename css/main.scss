@@ -236,7 +236,7 @@ Padding
     margin-left: -14%;
     transition: all 800ms ease-in-out;
 
-    &:hover {
+    &:hover, &--open {
       margin-left: -25px;
     }
   }
@@ -264,7 +264,7 @@ Padding
     margin-left: -21%;
     transition: all 800ms ease-in-out;
 
-    &:hover {
+    &:hover, &--open {
       margin-left: -10px;
     }
   }
@@ -285,7 +285,7 @@ Padding
     margin-left: -21%;
     transition: all 800ms ease-in-out;
 
-    &:hover {
+    &:hover, &--open {
       margin-left: 0px;
     }
   }

@@ -244,7 +244,7 @@ Padding
     -webkit-transition: all 800ms ease-in-out;
     transition: all 800ms ease-in-out;
   }
-  .sidebar:hover {
+  .sidebar:hover, .sidebar--open {
     margin-left: -25px;
   }
   .card {
@@ -268,7 +268,7 @@ Padding
     -webkit-transition: all 800ms ease-in-out;
     transition: all 800ms ease-in-out;
   }
-  .sidebar:hover {
+  .sidebar:hover, .sidebar--open {
     margin-left: -10px;
   }
   .title {
@@ -286,7 +286,7 @@ Padding
     -webkit-transition: all 800ms ease-in-out;
     transition: all 800ms ease-in-out;
   }
-  .sidebar:hover {
+  .sidebar:hover, .sidebar--open {
     margin-left: 0px;
   }
 }
