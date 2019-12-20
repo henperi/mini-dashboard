@@ -51,6 +51,7 @@ body {
   height: calc(100vh - calc(40px + 1.1%));
   position: fixed;
   z-index: 10;
+  overflow-y: scroll;
 }
 
 .container .icon__item {

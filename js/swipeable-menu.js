@@ -33,7 +33,6 @@ function getGesturePointFromEvent(evt) {
 }
 
 const handleGestureStart = evt => {
-  // console.log("Gesture");
   evt.preventDefault();
 
   if (evt.touches && evt.touches.length > 1) {
